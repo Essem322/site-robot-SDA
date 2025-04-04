@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Tengwarc";
+    src: url(../assets/fonts/Tengwarc.woff)
+  }
+h1 {
+    font-family: "Tengwarc";
+    color: blue;
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 5px 10px 1px orange;
+  }
