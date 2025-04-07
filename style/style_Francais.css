@@ -5,25 +5,26 @@
 body {
     background-image: url("../assets/image_fond/121483_555c447c78c99ced5729c1864fd704c1.png.webp");
     background-size: cover;
+    /* background-color: #f1f0ef; */
   }
 h1 {
     /* font-family: "Tengwarc"; */
-    color: blue;
+    color: orange;
     text-align: center;
     font-size: 50px;
-    text-shadow: 5px 5px 5px orange;
+    text-shadow: 5px 5px 5px black;
   }
   h2 {
     /* font-family: "Tengwarc"; */
-    color: blue;
+    color: orange;
     text-align: left;
     font-size: 20px;
-    text-shadow: 5px 5px 5px orange;
+    text-shadow: 5px 5px 5px black;
   }
   #lang {
     font-family: "Tengwarc";
-    color: blue;
+    color: orange;
     text-align: center;
     font-size: 50px;
-    text-shadow: 5px 5px 5px orange;
+    text-shadow: 5px 5px 5px black;
   }
