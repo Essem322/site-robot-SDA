@@ -1,0 +1,23 @@
+{
+  "name": "siterobotSDA",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:css": "sass --watch ./assets/scss/custom.scss ./assets/css/custom.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://essem322.github.io/site-robot-SDA/"
+  },
+  "author": "Elisabeth, Evan, Flora, Florent et Guelwin",
+  "bugs": {
+    "url": "https://essem322.github.io/site-robot-SDA/issues"
+  },
+  "homepage": "https://github.com/mokidochi/floragilbert.net#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.5"
+  }
+}
