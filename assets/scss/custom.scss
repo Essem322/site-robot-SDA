@@ -6,3 +6,76 @@
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/root";
 @import "../../node_modules/bootstrap/scss/functions";
+
+$primary: #ffd481;
+$primary-content: #815500;
+$primary-dark: #ffc34e;
+$primary-light: #ffe5b4;
+
+$secondary: #81d6ff;
+$secondary-content: #005781;
+$secondary-dark: #4ec5ff;
+$secondary-light: #b4e7ff;
+
+$background: #f1f0ef;
+$foreground: #fbfbfb;
+$border: #e2e0dd;
+
+$copy: #292723;
+$copy-light: #6e685e;
+$copy-lighter: #958f84;
+
+$success: #81ff81;
+$warning: #ffff81;
+$error: #ff8181;
+$success-content: #008100;
+$warning-content: #818100;
+$error-content: #810000;
+
+.bannièrevidéo {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh/1.5);
+    border-right: 0;
+    border-left: 0;
+}
+
+.bannièrevidéo h1 {
+
+    position: relative;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: #000000b8;
+    border: 2px solid #000000;
+    box-shadow: 2px 2px 5px #000;
+    color: #FFF;
+    font-weight: 700;
+    // border: 1px solid #FFF;
+    padding: 20px 40px;
+    border-radius: 400px;
+
+}
+
+.bannièrevidéo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.bannièrevidéo .filtrevidéo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: hsla(0, 0%, 0%, 0.503);
+    z-index: -5;
+}
