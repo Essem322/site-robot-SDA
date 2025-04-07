@@ -20,3 +20,10 @@ h1 {
     font-size: 20px;
     text-shadow: 5px 5px 5px orange;
   }
+  #lang {
+    font-family: "Tengwarc";
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px orange;
+  }
