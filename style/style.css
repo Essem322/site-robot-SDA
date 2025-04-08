@@ -1,14 +1,32 @@
 header {
     background-color: black;
 }
-#lien {
+#lien_interne {
     appearance: none;
     color: orange;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.200);
+    background-color: rgba(255, 255, 255, 0.050);
     width: 10%;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 10px;
     border-radius: 15px;
+}
+#lien_interne:hover {
+    appearance: none;
+    color: orange;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.100);
+    width: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+#lien_externe {
+    color: orange;
+}
+
+#lien_externe:hover {
+    color: orangered;
 }
