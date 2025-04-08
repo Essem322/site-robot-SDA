@@ -1,8 +1,17 @@
+@font-face {
+    font-family: "Tengwarc";
+    src: url(../assets/fonts/Tengwarc.woff)
+  }
+.lien_pages {
+    display:flex;
+    position: relative;
+}
 header {
     background-color: black;
 }
 #lien_interne {
     appearance: none;
+    text-align: center;
     color: orange;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.050);
@@ -29,4 +38,8 @@ header {
 
 #lien_externe:hover {
     color: orangered;
+}
+.sindaril{
+    font-family: "Tengwarc";
+    font-size: 50;
 }

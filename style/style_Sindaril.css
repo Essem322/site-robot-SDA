@@ -13,24 +13,40 @@ h1 {
     font-size: 100px;
     text-shadow: 5px 5px 5px black;
   }
-  h2 {
-    font-family: "Tengwarc";
-    color: orange;
-    text-align: left;
-    font-size: 50px;
-    text-shadow: 5px 5px 5px black;
+h2 {
+  font-family: "Tengwarc";
+  color: orange;
+  text-align: left;
+  font-size: 50px;
+  text-shadow: 5px 5px 5px black;
   }
-  #lang {
-    /* font-family: "Tengwarc"; */
-    color: orange;
-    text-align: center;
-    font-size: 30px;
-    text-shadow: 5px 5px 5px black;
+#lang {
+  /* font-family: "Tengwarc"; */
+  color: orange;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px black;
   }
-  ul {
-    font-family: "Tengwarc";
-    color: orange;
-    text-align: left;
-    font-size: 50px;
-    text-shadow: 5px 5px 5px black;
+ul {
+  font-family: "Tengwarc";
+  color: orange;
+  text-align: left;
+  font-size: 50px;
+  text-shadow: 5px 5px 5px black;
   }
+#lien_interne {
+  font-family: "Tengwarc";
+}
+#lien_interne:hover {
+  font-family: "Tengwarc";
+}
+#lien_externe {
+  font-family: "Tengwarc";
+}
+
+#lien_externe:hover {
+  font-family: "Tengwarc";
+}
+p {
+  font-family: "Tengwarc";
+}
