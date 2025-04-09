@@ -2,6 +2,13 @@
     font-family: "Tengwarc";
     src: url(../assets/fonts/Tengwarc.woff)
   }
+.corp {
+    /* color:white;
+    background-image: url("../assets/image_fond/lord-of-the-rings-gandalf.webp");
+    background-size: cover; */
+    display:flex;
+    position:relative;
+}
 .lien_pages {
     display:flex;
     position: relative;
@@ -42,4 +49,24 @@ header {
 .sindaril{
     font-family: "Tengwarc";
     font-size: 50;
+}
+.gestion{
+    background-color: #ffd481;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.document{
+    background-color: #81d6ff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.moodboard{
+    background-color: #ffd481;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.equipe{
+    background-color: #81d6ff;
+    padding-left: 20px;
+    padding-right: 20px;
 }
