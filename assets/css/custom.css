@@ -12136,7 +12136,6 @@ h2, .h2 {
 
 h3, .h3 {
   border-bottom: 1px solid #4ec5ff;
-  width: 80%;
   margin: 0 auto;
   padding-bottom: 5px;
   margin-bottom: 12px;
@@ -12150,7 +12149,7 @@ h3, .h3 {
 .content {
   background: #FCF5E5;
   box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -12162,10 +12161,11 @@ h3, .h3 {
 }
 
 .images {
+  max-width: 700px;
   width: 100%;
   height: auto;
-  border-radius: 2px;
-  box-shadow: 2px 2px 5px #000;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px #000;
 }
 
 .texte {
@@ -12186,6 +12186,34 @@ h3, .h3 {
   box-shadow: 1px 1px 5px #000;
 }
 
+@media (pointer: fine) {
+  .box {
+    opacity: 0.9;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    opacity: 1;
+    background-color: #FF914D !important;
+    color: rgb(131, 36, 1);
+    box-shadow: 2px 2px 5px #000;
+  }
+  .box:hover h3, .box:hover .h3 {
+    border-bottom: 1px solid #975023;
+  }
+}
 header {
   z-index: 100;
   top: 0;
