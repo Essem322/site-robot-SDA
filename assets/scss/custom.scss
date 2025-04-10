@@ -32,7 +32,8 @@ $success-content: #008100;
 $warning-content: #818100;
 $error-content: #810000;
 
-@font-face { //police seigneur des anneaux
+@font-face {
+    //police seigneur des anneaux
     font-family: 'LOTR';
     src: url('../fonts/RINGM___.TTF');
 }
@@ -49,7 +50,8 @@ $error-content: #810000;
     box-shadow: 0px 2px 5px #000;
 }
 
-.bannièrevidéo h1 { //titre sur la vidéo
+.bannièrevidéo h1 {
+    //titre sur la vidéo
 
     position: relative;
     word-spacing: 12px;
@@ -63,7 +65,8 @@ $error-content: #810000;
 
 }
 
-.bannièrevidéo video { //vidéo d'illustration
+.bannièrevidéo video {
+    //vidéo d'illustration
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -74,7 +77,8 @@ $error-content: #810000;
     right: 0;
 }
 
-.bannièrevidéo .filtrevidéo { //filtre pour la vidéo
+.bannièrevidéo .filtrevidéo {
+    //filtre pour la vidéo
     position: absolute;
     top: 0;
     bottom: 0;
@@ -84,10 +88,15 @@ $error-content: #810000;
     z-index: -5;
 }
 
-@media (min-width: 576px) { //texte tesponsive pour le titre principal
+@media (min-width: 576px) {
+    //texte tesponsive pour le titre principal
 
     .bannièrevidéo h1 {
         font-size: 64px !important;
+    }
+
+    .navbar {
+        font-size: 16px;
     }
 }
 
@@ -121,7 +130,12 @@ $error-content: #810000;
 
 }
 
-.navbar-light { // éléments de la barre de navigation
+.navbar {
+    font-size: 16px;
+}
+
+.navbar-light {
+    // éléments de la barre de navigation
     color: orange !important;
 }
 
@@ -129,7 +143,7 @@ $error-content: #810000;
     background-color: #000000 !important;
 }
 
-.navbar-brand { 
+.navbar-brand {
     justify-content: flex-start;
     padding-left: 1.5rem;
     padding-top: 0px !important;
@@ -167,7 +181,8 @@ ul li {
 }
 
 
-.ancre { //pour que les liens cliquables emmène la ou ils sont sensés, sans prendre en compte la barre de navigation
+.ancre {
+    //pour que les liens cliquables emmène la ou ils sont sensés, sans prendre en compte la barre de navigation
     padding: 1px;
     position: relative;
     margin-top: -50px;
@@ -178,11 +193,14 @@ ul li {
     position: relative;
 }
 
-.container { //parent de .content pour que le style ne s'applique pas au texte
+.container {
+    //parent de .content pour que le style ne s'applique pas au texte
     position: relative;
+    width: 80%;
 }
 
-.content { //fond stylysé effet parchemin
+.content {
+    //fond stylysé effet parchemin
     background: #FCF5E5;
     position: absolute;
     margin-top: -40px;
@@ -215,7 +233,18 @@ ul li {
     height: auto;
 }
 
-.box { //boites de contenu pour notre équipe
+.technique {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+
+.technique ul li {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    //boites de contenu pour notre équipe
     border-radius: 15px;
     color: $secondary-content;
     background-color: $secondary;
@@ -225,7 +254,9 @@ ul li {
     box-shadow: 1px 1px 5px #000;
 }
 
-@media (pointer: fine) { // pour que l'animation ne se fasse pas sur mobile
+@media (pointer: fine) {
+
+    // pour que l'animation ne se fasse pas sur mobile
     .box {
         opacity: 0.9;
         border-radius: 5px;
@@ -287,9 +318,22 @@ body {
     font-family: 'LOTR';
 }
 
+.texteprincipal {
+    text-align: justify;
+    margin: 0 20px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.emphase {
+    font-weight: bold;
+    color: #005781;
+}
+
 p {
     margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 h2 {
@@ -302,13 +346,16 @@ h3 {
     border-bottom: 1px solid $secondary-dark;
     margin: 0 auto;
     padding-bottom: 5px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .mentions {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
     background-color: #000;
     color: white;
     padding-top: 30px;
+    padding-bottom: 10px;
     margin-bottom: 0px;
     margin-top: -20px;
 }
