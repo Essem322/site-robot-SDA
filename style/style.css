@@ -16,6 +16,11 @@
 header {
     background-color: black;
 }
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
 #lien_interne {
     appearance: none;
     text-align: center;
