@@ -12032,61 +12032,21 @@ textarea.form-control-lg {
   src: url("../fonts/RINGM___.TTF");
 }
 .bannièrevidéo {
+  z-index: -100;
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: calc(100vh - 112px);
   border-right: 0;
   border-left: 0;
   box-shadow: 0px 2px 5px #000;
-  margin-bottom: 24px;
 }
 
-@media (min-width: 576px) {
-  .bannièrevidéo {
-    height: 250px;
-  }
-  .bannièrevidéo h1, .bannièrevidéo .h1 {
-    font-size: 27px !important;
-  }
-}
-@media (min-width: 768px) {
-  .bannièrevidéo {
-    height: 300px;
-  }
-  .bannièrevidéo h1, .bannièrevidéo .h1 {
-    font-size: 37px !important;
-  }
-}
-@media (min-width: 992px) {
-  .bannièrevidéo {
-    height: 350px;
-  }
-  .bannièrevidéo h1, .bannièrevidéo .h1 {
-    font-size: 48px !important;
-  }
-}
-@media (min-width: 1200px) {
-  .bannièrevidéo {
-    height: 400px;
-  }
-  .bannièrevidéo h1, .bannièrevidéo .h1 {
-    font-size: 56px !important;
-  }
-}
-@media (min-width: 1400px) {
-  .bannièrevidéo {
-    height: 450px;
-  }
-  .bannièrevidéo h1, .bannièrevidéo .h1 {
-    font-size: 64px !important;
-  }
-}
 .bannièrevidéo h1, .bannièrevidéo .h1 {
   position: relative;
   word-spacing: 12px;
-  font-size: 24px;
+  font-size: 56px;
   color: orange;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
   font-weight: 700;
@@ -12115,30 +12075,80 @@ textarea.form-control-lg {
   z-index: -5;
 }
 
-body {
-  background-color: black;
-  background-image: url("../image_fond/lotr.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  font-family: "LOTR";
+@media (min-width: 576px) {
+  .bannièrevidéo h1, .bannièrevidéo .h1 {
+    font-size: 64px !important;
+  }
+}
+@media (min-width: 768px) {
+  .bannièrevidéo h1, .bannièrevidéo .h1 {
+    font-size: 72px !important;
+  }
+}
+@media (min-width: 992px) {
+  .bannièrevidéo h1, .bannièrevidéo .h1 {
+    font-size: 54px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .bannièrevidéo h1, .bannièrevidéo .h1 {
+    font-size: 70px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .bannièrevidéo h1, .bannièrevidéo .h1 {
+    font-size: 76px !important;
+  }
+}
+.navbar-light {
+  color: orange !important;
 }
 
-p {
-  margin-top: 20px;
-  margin-bottom: 0;
+.bg-light {
+  background-color: #000000 !important;
 }
 
-h2, .h2 {
-  margin-bottom: 20px;
-  margin-top: 20px !important;
-  font-family: "LOTR";
+.navbar-brand {
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  color: orange;
 }
 
-h3, .h3 {
-  border-bottom: 1px solid #4ec5ff;
-  margin: 0 auto;
-  padding-bottom: 5px;
-  margin-bottom: 12px;
+.nav-item {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.nav-link {
+  color: #FFF !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar ul li:not(:last-child)::after {
+  content: "";
+  border: 1px solid #c2c2c2;
+  border-width: 1px 1px 0 0;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  height: 100%;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0 7px;
+  position: relative;
+}
+
+.ancre {
+  padding: 1px;
+  position: relative;
+  margin-top: -50px;
 }
 
 .col,
@@ -12146,14 +12156,21 @@ h3, .h3 {
   position: relative;
 }
 
+.container {
+  position: relative;
+}
+
 .content {
   background: #FCF5E5;
+  position: absolute;
+  margin-top: -40px;
   box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  filter: url(#wavy2);
   border-radius: 2px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .col-10 {
@@ -12214,6 +12231,10 @@ h3, .h3 {
     border-bottom: 1px solid #975023;
   }
 }
+svg {
+  display: none;
+}
+
 header {
   z-index: 100;
   top: 0;
@@ -12223,13 +12244,42 @@ header {
 
 footer {
   margin-top: auto;
+  z-index: 300;
   text-align: center;
+}
+
+body {
+  background-color: black;
+  background-image: url("../image_fond/lotr.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "LOTR";
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+h2, .h2 {
+  margin-bottom: 20px;
+  margin-top: 30px !important;
+  font-family: "LOTR";
+}
+
+h3, .h3 {
+  border-bottom: 1px solid #4ec5ff;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
 }
 
 .mentions {
   background-color: #000;
   color: white;
+  padding-top: 30px;
   margin-bottom: 0px;
+  margin-top: -20px;
 }
 
 /*# sourceMappingURL=custom.css.map */

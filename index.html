@@ -2,9 +2,9 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
     <title>Robot combat Seigneur des Anneaux</title>
     <script src="fortnite.js"></script>
@@ -17,78 +17,120 @@
 </head>
 
 <body>
-    <div class="content justify-content-center">
-        <header>
-            <div class="lien_pages">
-                <a id="lien_interne" href="./index.html">Francais</a>
-                <a id="lien_interne" class="sindaril" href="./pages_Sindaril.html">Sindaril</a>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+            <a class="navbar-brand" href="./index.html">Francais</a>
+            <a class="navbar-brand" href="./pages_Sindaril.html">Sindaril</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#haut">Retour en Haut</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#origines">Origines du projet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#outildegestion">Outil de gestion</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#technique">Documents technique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#moodboard">Moodboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipe">L'équipe</a>
+                    </li>
+                </ul>
             </div>
-        </header>
-        <div class="bannièrevidéo">
-            <video autoplay loop muted plays-inline src="assets/videos/lotr.mp4"></video>
-            <div class="filtrevidéo"> </div>
-            <h1 class="text-center">Robot combat Seigneur des Anneaux</h1>
+        </nav>
+        <div class="lien_pages">
+            <a href="./index.html">Francais</a>
+            <a href="./pages_Sindaril.html">Sindaril</a>
         </div>
-        <div class="container text-center">
+    </header>
+    <div class="bannièrevidéo" id="haut">
+        <video autoplay loop muted src="assets/videos/lotr.mp4"></video>
+        <div class="filtrevidéo"> </div>
+        <h1 class="text-center">Robot combat Seigneur des Anneaux</h1>
+    </div>
+    <div class="container text-center">
+        <div class="justify-content-center">
+            <div class="content"></div>
+
             <div class="row justify-content-between">
+                <div class="ancre" id="origines"></div>
+                <div class="col col-12 col-md-12">
+                    <h2>Origines du projet</h2>
+                </div>
+                <div class="ancre" id="outildegestion"></div>
                 <div class="col col-12 col-md-12">
                     <h2>Outils de gestion de projet</h2>
                     <p>outil <a id="lien_externe"
                             href="https://tree.taiga.io/project/mokidochi-hackaton/kanban">Kanban</a>
                         sur le site Taiga.io</p>
                 </div>
+                <div class="ancre" id="technique"></div>
                 <div class="col col-12 col-md-12">
                     <h2>Document technique</h2>
                 </div>
+                <div class="ancre" id="moodboard"></div>
                 <div class="col col-12 col-lg-12">
                     <h2>Moodboard</h2>
-                    <img src="assets/images/moodboard.png" class="images">
+                    <img src="assets/images/moodboard.png" class="images" alt="image du moodboard seigneur des anneaux">
                 </div>
+                <div class="ancre" id="equipe"></div>
                 <div class="col col-12 col-lg-12 align-items-center">
-                    <h2>Présentation des équipes</h2>
+                    <h2>Présentation de l'équipe</h2>
                     <div class="row justify-content-around">
-                        <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2 box align-content-around">
+                        <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2 box align-content-start">
                             <h3>Elisabeth</h3>
-                            <img src="assets/images/photos.png" class="images">
+                            <img src="assets/images/elisabeth.jpg" class="images" alt="photo d'Elisabeth">
                             <p>Responsable esthétique</p>
                         </div>
-
-                        <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2 box align-content-around">
+                        <div class="col-10 col-sm-5 col-md-4 col-lg-3 col-xl-2 box align-content-start">
                             <h3>Evan</h3>
-                            <img src="assets/images/photos.png" class="images">
+                            <img src="assets/images/evan.jpg" class="images" alt="photo d'Evan">
                             <p class="texte">Responsable site web</p>
                         </div>
-                        <div class="col-10 col-sm-5 col-md-5 col-lg-3 col-xl-2 box align-content-around">
+                        <div class="col-10 col-sm-5 col-md-5 col-lg-3 col-xl-2 box align-content-start">
                             <h3>Flora</h3>
-                            <img src="assets/images/flora.jpg" class="images">
+                            <img src="assets/images/flora.jpg" class="images" alt="photo de Flora">
                             <p>Responsable gestion de projet</p>
                         </div>
-                        <div class="col-10 col-sm-5 col-md-5 col-lg-4 col-xl-2 box align-content-around">
-                            <h3>Florent</h3>
-                            <img src="assets/images/photos.png" class="images">
-                            <p>Responsable Fabrication</p>
+
+                        <div class="col-10 col-sm-5 col-md-5 col-lg-4 col-xl-2 box align-content-start">
+                            <a href="https://www.linkedin.com/in/florent-vogel-0a2b11314">
+                                <h3>Florent</h3>
+                                <img src="assets/images/photos.png" class="images" alt="photo de Florent">
+                                <p>Responsable Fabrication</p>
+                            </a>
                         </div>
-                        <div class="col-10 col-sm-5 col-md-5 col-lg-4 col-xl-2 box align-content-around">
+                        <div class="col-10 col-sm-5 col-md-5 col-lg-4 col-xl-2 box align-content-start">
                             <h3>Guelwin</h3>
-                            <img src="assets/images/photos.png" class="images">
+                            <img src="assets/images/guelwin.jpg" class="images" alt="photo de Guelwin">
                             <p>Documentaliste</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <p class="mentions">Ce site utilise certains éléments soumis aux droits d'auteur. Ils sont utilisés
-                uniquement à
-                des fins
-                informatives et éducatives, sans intention publicitaire ni commerciale.</p>
-        </footer>
     </div>
+    <footer>
+        <p class="mentions">Ce site utilise certains éléments soumis aux droits d'auteur. Ils sont utilisés
+            uniquement à
+            des fins
+            informatives et éducatives, sans intention publicitaire ni commerciale.</p>
+    </footer>
+    <svg>
+        <filter id="wavy2">
+            <feTurbulence x="0%" y="0%" baseFrequency="0.02" numOctaves="5" seed="1"></feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="20" />
+        </filter>
+    </svg>
 </body>
-
-<svg>
-    <filter id="wavy2">
-        <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1"></feTurbulence>
-        <feDisplacementMap in="SourceGraphic" scale="20" />
-    </filter>
-</svg>

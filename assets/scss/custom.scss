@@ -32,85 +32,28 @@ $success-content: #008100;
 $warning-content: #818100;
 $error-content: #810000;
 
-@font-face {
+@font-face { //police seigneur des anneaux
     font-family: 'LOTR';
     src: url('../fonts/RINGM___.TTF');
 }
 
 .bannièrevidéo {
+    z-index: -100;
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: calc(100vh - 112px);
     border-right: 0;
     border-left: 0;
     box-shadow: 0px 2px 5px #000;
-    margin-bottom: 24px;
 }
 
-@media (min-width: 576px) {
-
-    .bannièrevidéo {
-        height: 250px;
-    }
-
-    .bannièrevidéo h1 {
-        font-size: 27px !important;
-    }
-}
-
-@media (min-width: 768px) {
-
-    .bannièrevidéo {
-        height: 300px;
-    }
-
-    .bannièrevidéo h1 {
-        font-size: 37px !important;
-    }
-}
-
-@media (min-width: 992px) {
-
-    .bannièrevidéo {
-        height: 350px;
-    }
-
-    .bannièrevidéo h1 {
-        font-size: 48px !important;
-    }
-
-}
-
-@media (min-width: 1200px) {
-
-    .bannièrevidéo {
-        height: 400px;
-    }
-
-    .bannièrevidéo h1 {
-        font-size: 56px !important;
-    }
-}
-
-@media (min-width: 1400px) {
-
-    .bannièrevidéo {
-        height: 450px;
-    }
-
-    .bannièrevidéo h1 {
-        font-size: 64px !important;
-    }
-
-}
-
-.bannièrevidéo h1 {
+.bannièrevidéo h1 { //titre sur la vidéo
 
     position: relative;
     word-spacing: 12px;
-    font-size: 24px;
+    font-size: 56px;
     color: orange;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     font-weight: 700;
@@ -120,7 +63,7 @@ $error-content: #810000;
 
 }
 
-.bannièrevidéo video {
+.bannièrevidéo video { //vidéo d'illustration
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -131,7 +74,7 @@ $error-content: #810000;
     right: 0;
 }
 
-.bannièrevidéo .filtrevidéo {
+.bannièrevidéo .filtrevidéo { //filtre pour la vidéo
     position: absolute;
     top: 0;
     bottom: 0;
@@ -141,30 +84,93 @@ $error-content: #810000;
     z-index: -5;
 }
 
-body {
-    background-color: black;
-    background-image: url('../image_fond/lotr.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'LOTR';
+@media (min-width: 576px) { //texte tesponsive pour le titre principal
+
+    .bannièrevidéo h1 {
+        font-size: 64px !important;
+    }
 }
 
-p {
-    margin-top: 20px;
-    margin-bottom: 0;
+@media (min-width: 768px) {
+
+    .bannièrevidéo h1 {
+        font-size: 72px !important;
+    }
 }
 
-h2 {
-    margin-bottom: 20px;
-    margin-top: 20px !important;
-    font-family: 'LOTR';
+@media (min-width: 992px) {
+
+    .bannièrevidéo h1 {
+        font-size: 54px !important;
+    }
+
 }
 
-h3 {
-    border-bottom: 1px solid $secondary-dark;
-    margin: 0 auto;
-    padding-bottom: 5px;
-    margin-bottom: 12px;
+@media (min-width: 1200px) {
+
+    .bannièrevidéo h1 {
+        font-size: 70px !important;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .bannièrevidéo h1 {
+        font-size: 76px !important;
+    }
+
+}
+
+.navbar-light { // éléments de la barre de navigation
+    color: orange !important;
+}
+
+.bg-light {
+    background-color: #000000 !important;
+}
+
+.navbar-brand { 
+    justify-content: flex-start;
+    padding-left: 1.5rem;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    color: orange;
+}
+
+.nav-item {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.nav-link {
+    color: #FFF !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar ul li:not(:last-child)::after {
+    content: "";
+    border: 1px solid #c2c2c2;
+    border-width: 1px 1px 0 0;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    height: 100%;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0 7px;
+    position: relative;
+}
+
+
+.ancre { //pour que les liens cliquables emmène la ou ils sont sensés, sans prendre en compte la barre de navigation
+    padding: 1px;
+    position: relative;
+    margin-top: -50px;
 }
 
 .col,
@@ -172,15 +178,21 @@ h3 {
     position: relative;
 }
 
-.content {
+.container { //parent de .content pour que le style ne s'applique pas au texte
+    position: relative;
+}
+
+.content { //fond stylysé effet parchemin
     background: #FCF5E5;
+    position: absolute;
+    margin-top: -40px;
     box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
-    // filter: url(#wavy2);
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    filter: url(#wavy2);
     border-radius: 2px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .col-10 {
@@ -195,7 +207,6 @@ h3 {
     box-shadow: 1px 1px 5px #000;
 }
 
-
 .texte {
     margin-bottom: 0;
 }
@@ -204,7 +215,7 @@ h3 {
     height: auto;
 }
 
-.box {
+.box { //boites de contenu pour notre équipe
     border-radius: 15px;
     color: $secondary-content;
     background-color: $secondary;
@@ -214,7 +225,7 @@ h3 {
     box-shadow: 1px 1px 5px #000;
 }
 
-@media (pointer: fine) {
+@media (pointer: fine) { // pour que l'animation ne se fasse pas sur mobile
     .box {
         opacity: 0.9;
         border-radius: 5px;
@@ -235,7 +246,7 @@ h3 {
     }
 
     .box:hover {
-        cursor:pointer;
+        cursor: pointer;
         -webkit-transform: scale(1.05, 1.05);
         transform: scale(1.05, 1.05);
         opacity: 1;
@@ -249,6 +260,12 @@ h3 {
     }
 }
 
+//style pour les balises classiques
+
+svg {
+    display: none;
+}
+
 header {
     z-index: 100;
     top: 0;
@@ -258,11 +275,40 @@ header {
 
 footer {
     margin-top: auto;
+    z-index: 300;
     text-align: center;
+}
+
+body {
+    background-color: black;
+    background-image: url('../image_fond/lotr.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'LOTR';
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    margin-top: 30px !important;
+    font-family: 'LOTR';
+}
+
+h3 {
+    border-bottom: 1px solid $secondary-dark;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
 }
 
 .mentions {
     background-color: #000;
     color: white;
+    padding-top: 30px;
     margin-bottom: 0px;
+    margin-top: -20px;
 }
