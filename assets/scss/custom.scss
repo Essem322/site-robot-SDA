@@ -335,8 +335,12 @@ body {
 }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
     color: #005781;
+}
+
+a:hover {
+    color: rgb(131, 36, 1);
 }
 
 p {
